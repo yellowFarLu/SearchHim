@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gbH-ms-ZiT" customClass="HYConfirmationView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您需要发送验证申请，等待对方通过" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6a-ge-PS2">
+                    <rect key="frame" x="10" y="10" width="394" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="4Zu-0Q-GUZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-eA-NgS">
+                    <rect key="frame" x="10" y="47" width="396" height="27"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="TV1-as-Ugd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3q-YT-SqH">
+                    <rect key="frame" x="10" y="75" width="394" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.30144813009999999" blue="0.15116139770000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mIU-CZ-dzL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ebh-eA-NgS" secondAttribute="trailing" constant="8" id="0u3-YL-Fun"/>
+                <constraint firstItem="O6a-ge-PS2" firstAttribute="top" secondItem="gbH-ms-ZiT" secondAttribute="top" constant="10" id="8mK-k8-hoj"/>
+                <constraint firstAttribute="trailing" secondItem="o3q-YT-SqH" secondAttribute="trailing" constant="10" id="BDO-vW-hMW"/>
+                <constraint firstAttribute="trailing" secondItem="O6a-ge-PS2" secondAttribute="trailing" constant="10" id="QH4-SC-0FH"/>
+                <constraint firstItem="ebh-eA-NgS" firstAttribute="top" secondItem="O6a-ge-PS2" secondAttribute="bottom" constant="8" id="SDC-1t-u99"/>
+                <constraint firstItem="O6a-ge-PS2" firstAttribute="leading" secondItem="gbH-ms-ZiT" secondAttribute="leading" constant="10" id="VLS-Zt-gZF"/>
+                <constraint firstItem="o3q-YT-SqH" firstAttribute="leading" secondItem="gbH-ms-ZiT" secondAttribute="leading" constant="10" id="hJl-WQ-uxI"/>
+                <constraint firstItem="o3q-YT-SqH" firstAttribute="top" secondItem="ebh-eA-NgS" secondAttribute="bottom" constant="1" id="hPP-LO-5uZ"/>
+                <constraint firstItem="ebh-eA-NgS" firstAttribute="leading" secondItem="gbH-ms-ZiT" secondAttribute="leading" constant="10" id="mzG-Tb-ugT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="diver" destination="o3q-YT-SqH" id="7sG-ov-pwh"/>
+                <outlet property="textView" destination="ebh-eA-NgS" id="AtD-b8-7ew"/>
+            </connections>
+            <point key="canvasLocation" x="540" y="306"/>
+        </view>
+    </objects>
+</document>

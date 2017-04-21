@@ -1,0 +1,9 @@
+pod 'AVOSCloud'               # 数据存储、短信、云引擎调用等基础服务模块
+pod 'AVOSCloudIM'             # 实时通信模块
+
+platform :ios, '7.0' #手机的系统
+pod 'AMap3DMap'  #3D地图SDK
+pod 'AMapSearch' #搜索服务SDK
+
+
+xcodeproj '/Users/huangyuan/Desktop/searHim重制版-05 3D地图检索/searHim重制版-01基本框架构建.xcodeproj’

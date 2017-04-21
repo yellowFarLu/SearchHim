@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HYFriendListCell" id="KGk-i7-Jjw" customClass="HYFriendListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ybw-bw-rUn">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="bOV-Y6-eX1"/>
+                            <constraint firstAttribute="width" constant="38" id="cKU-rg-K0h"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4R-I9-TDS">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFj-Pz-yvZ">
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="SWO-ZN-fOp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xFj-Pz-yvZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8mq-Hz-XUq"/>
+                    <constraint firstItem="Ybw-bw-rUn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8.5" id="9FM-rl-gCH"/>
+                    <constraint firstItem="Ybw-bw-rUn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="AGL-qL-aeW"/>
+                    <constraint firstItem="f4R-I9-TDS" firstAttribute="leading" secondItem="Ybw-bw-rUn" secondAttribute="trailing" constant="14" id="Gi0-EL-Z9e"/>
+                    <constraint firstAttribute="trailing" secondItem="xFj-Pz-yvZ" secondAttribute="trailing" constant="10" id="Ioz-qk-KVh"/>
+                    <constraint firstItem="f4R-I9-TDS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8.5" id="PTN-C9-tgm"/>
+                    <constraint firstAttribute="trailing" secondItem="f4R-I9-TDS" secondAttribute="trailing" constant="8" id="Uhk-mQ-lpK"/>
+                    <constraint firstAttribute="bottom" secondItem="xFj-Pz-yvZ" secondAttribute="bottom" constant="0.5" id="q8Q-8W-Tfr"/>
+                    <constraint firstAttribute="bottom" secondItem="f4R-I9-TDS" secondAttribute="bottom" constant="8" id="qxB-OT-hxi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="Ybw-bw-rUn" id="Kv4-cz-n4i"/>
+                <outlet property="usernameLable" destination="f4R-I9-TDS" id="Y7K-0u-SWP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

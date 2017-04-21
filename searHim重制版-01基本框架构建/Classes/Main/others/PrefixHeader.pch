@@ -1,0 +1,80 @@
+//
+//  PrefixHeader.pch
+//  searHim重制版-01基本框架构建
+//
+//  Created by 黄远 on 16/7/4.
+//  Copyright © 2016年 黄远. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define mainScreenWid [UIScreen mainScreen].bounds.size.width
+#define mainScreenHei [UIScreen mainScreen].bounds.size.height
+
+//设置字体
+#define statusOriginNameFont [UIFont systemFontOfSize:14]
+#define statusOriginTimeFont [UIFont systemFontOfSize:12]
+#define statusOriginSourceFont statusOriginTimeFont
+#define statusOriginTextFont [UIFont systemFontOfSize:20]
+
+
+#import "UIView+Extension.h"
+#import "UIImage+Exstension.h"
+
+#define customColor(rd, gren, blu) [UIColor colorWithRed:(rd)/255.0 green:(gren)/255.0 blue:(blu)/255.0 alpha:1.0]
+// 全局背景色
+#define HYGlobalBg customColor(240, 240, 240)
+
+#import "AppDelegate.h"
+#define HYLog(...) NSLog(__VA_ARGS__)
+
+#define bottomItemFont [UIFont systemFontOfSize:15]
+#define HYKeyFont [UIFont systemFontOfSize:17]
+#define HYValueFont [UIFont systemFontOfSize:14]
+
+#define HYSearHimInset 10
+
+#define HYOpenImageBook @"打开相册"
+#import "MBProgressHUD+NJ.h"
+
+//75 190 44
+#define backBtnColor [UIColor colorWithRed:(250/255.0) green:(82/255.0) blue:(112/255.0) alpha:1.0]
+#define HYIconWid 50
+//#define HYKeyboardDidChange @"键盘值变了"
+
+#define HYCornerRadius 10
+#define HYPadCornerRadius 7
+
+#define HYBackBtnH 35
+#define HYBackBtnW 60
+
+/*
+ * 表情
+ */
+#define emotionMaxRow 3
+#define emotionMaxCol 7
+#define emotionPageMaxCount ((emotionMaxRow * emotionMaxCol) - 1)
+
+#define HYEmotionDidClickNotification @"HYEmotionDidClick"
+#define HYCurrentEmotion @"HYCurrentEmotion"
+#define HYEmotionDelegateNotification @"HYEmotionDelegate"
+
+// 默认头像
+#define HYSystemIcon [UIImage imageNamed:@"375250"]
+
+/** 适配其他版本字体 */
+/** 适配IPad */
+#define HYPadKeyFont [UIFont systemFontOfSize:10]
+#define HYPadValueFont [UIFont systemFontOfSize:8]
+#define HYPadHeight 0.36
+#define HYPadTopMargin 64
+
+/** 适配iPhone4 */
+#define HYI4Height 0.4
+
+/** 适配iPhone5s */
+#define HYI5Height 0.33
+
+#endif /* PrefixHeader_pch */
